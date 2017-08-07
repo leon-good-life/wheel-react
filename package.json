@@ -1,0 +1,26 @@
+{
+  "name": "wheel-react",
+  "version": "1.0.0",
+  "description": "Easy integration!!! Easily detect mouse wheel and trackpad movement direction, even when there is no scrolling overflow.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leon-good-life/wheel-react.git"
+  },
+  "keywords": [
+    "react",
+    "scroll",
+    "wheel",
+    "mouse",
+    "trackpad"
+  ],
+  "author": "leon.good.life",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leon-good-life/wheel-react/issues"
+  },
+  "homepage": "https://github.com/leon-good-life/wheel-react#readme"
+}
