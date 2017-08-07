@@ -19,10 +19,10 @@ WheelReact.events = {
       return;
     }
     if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) {
-      if (e.deltaX > 0 && WheelReact._config.hasOwnProperty('right')) {
-        WheelReact._config.right();
-      } else if (e.deltaX < 0 && WheelReact._config.hasOwnProperty('left')) {
+       if (e.deltaX > 0 && WheelReact._config.hasOwnProperty('left')) {
         WheelReact._config.left();
+      } else if (e.deltaX < 0 && WheelReact._config.hasOwnProperty('right')) {
+        WheelReact._config.right();
       }
     } else {
       if (e.deltaY > 0 && WheelReact._config.hasOwnProperty('up')) {
