@@ -1,6 +1,6 @@
 {
   "name": "wheel-react",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Easy integration!!! Easily detect mouse wheel and trackpad movement direction, even when there is no scrolling overflow.",
   "main": "main.js",
   "scripts": {
