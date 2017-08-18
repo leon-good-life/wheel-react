@@ -1,1 +1,1 @@
-module.exports = require('./WheelReact');
+module.exports = require('./lib/WheelReact');
