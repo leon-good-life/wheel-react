@@ -42,3 +42,55 @@ Easy integration!!! Easily detect mouse wheel and trackpad movement direction, e
 ```javascript
    WheelReact.clearTimeout();
 ```
+
+# Example
+```javascript
+import React, { Component } from 'react';
+import WheelReact from 'wheel-react';
+
+class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      content: 'Move your mouse mouse wheel or trackpad or try to scroll here!'
+    };
+    WheelReact.config({
+      left: () => {
+        this.setState({
+          content: 'left direction detected.'
+        });
+      },
+      right: () => {
+        this.setState({
+          content: 'right direction detected.'
+        });
+      },
+      up: () => {
+        this.setState({
+          content: 'up direction detected.'
+        });
+      },
+      down: () => {
+        this.setState({
+          content: 'down direction detected.'
+        });
+      }
+    });
+  }
+  render() {
+    let styles = {
+      height: '400px',
+      fontSize: '34px',
+      textAlign: 'center'
+    };
+    return (
+      <div {...WheelReact.events} tabIndex="1" style={styles}>
+        {this.state.content}
+      </div>
+    );
+  }
+}
+
+export default App;
+
+```
